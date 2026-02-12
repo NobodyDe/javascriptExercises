@@ -11,7 +11,7 @@ async function getCharacter(id) {
     console.log(json);
     return json;
   } catch (error) {
-    console.error(error.menssage);
+    console.error(error.message);
   }
 }
 

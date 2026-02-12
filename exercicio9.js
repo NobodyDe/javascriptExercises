@@ -9,7 +9,7 @@ async function getAllCharactes(maxPages = Infinity) {
     }
     const json = await response.json();
     const characters = json.results;
-    allCharacters.push([...characters]);
+    allCharacters.push(...characters);
     if (json.info.next === null) {
       return null;
     }
